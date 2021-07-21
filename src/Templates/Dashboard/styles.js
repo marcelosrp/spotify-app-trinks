@@ -37,3 +37,8 @@ export const SongsWrapper = styled.div`
 export const PlayerWrapper = styled.div`
   margin: 2rem 0;
 `
+
+export const Lyrics = styled.div`
+  text-align: center;
+  white-space: pre;
+`
