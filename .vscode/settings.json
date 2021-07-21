@@ -1,0 +1,12 @@
+{
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
