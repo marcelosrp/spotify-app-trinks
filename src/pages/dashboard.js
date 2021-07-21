@@ -1,9 +1,9 @@
 import React from 'react'
 import { NextSeo } from 'next-seo'
 
-import HomeTemplate from '../Templates/Home'
+import DashboardTemplate from '../Templates/Dashboard'
 
-const Home = () => {
+const Dashboard = () => {
   return (
     <>
       <NextSeo
@@ -26,9 +26,9 @@ const Home = () => {
           site_name: 'My Trips'
         }}
       />
-      <HomeTemplate />
+      <DashboardTemplate />
     </>
   )
 }
 
-export default Home
+export default Dashboard
