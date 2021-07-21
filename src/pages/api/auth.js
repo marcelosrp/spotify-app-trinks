@@ -5,7 +5,7 @@ export default function AuthLogin(req, res) {
     const code = req.body.code
 
     const spotifyAPI = new SpotifyWebApi({
-      redirectUri: 'http://localhost:3000',
+      redirectUri: process.env.NEXT_PUBLIC_REDIRECT_URI,
       clientId: process.env.NEXT_PUBLIC_API_KEY,
       clientSecret: process.env.NEXT_PUBLIC_API_KEY_SECRET
     })
