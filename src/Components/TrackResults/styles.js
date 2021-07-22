@@ -4,7 +4,8 @@ export const TrackWrapper = styled.div`
   align-items: center;
   cursor: pointer;
   display: flex;
-  margin: 2rem;
+  margin: 1rem;
+  width: 30rem;
 `
 
 export const TrackThumb = styled.img`
@@ -17,8 +18,8 @@ export const TrackInfos = styled.div`
 `
 
 export const TrackTitle = styled.p`
-  color: var(--white);
-  font-size: 1.6rem;
+  color: var(--spotify-green);
+  font-size: 1.5rem;
   line-height: 20px;
 `
 

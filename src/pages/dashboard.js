@@ -22,6 +22,8 @@ const Dashboard = () => {
   const [playingTrack, setPlayingTrack] = useState()
   const [lyrics, setLyrics] = useState('')
 
+  console.log(searchResults)
+
   const handleChooseTrack = (track) => {
     setPlayingTrack(track)
     setSearch('')
@@ -67,6 +69,22 @@ const Dashboard = () => {
 
     return () => (cancel = true)
   }, [search, accessToken])
+
+  /* useEffect(() => {
+    if (!accessToken) return
+
+    spotifyApi.searchPlaylists('Metallica').then((res) => {
+      setSearchResults(
+        res.body.playlists.items.map((playlist) => {
+          return {
+            name: playlist.name,
+            uri: playlist.uri,
+            playlistUrl: playlist.images[0].url
+          }
+        })
+      )
+    })
+  }, [accessToken]) */
 
   useEffect(() => {
     if (!playingTrack) return
