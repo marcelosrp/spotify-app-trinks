@@ -21,12 +21,12 @@ const App = ({ Component, pageProps }) => {
           rel="apple-touch-icon"
           href="https://wwwmarketing.scdn.co/img/favicon-32x32.png"
         />
-        <meta name="theme-color" content="#06092B" />
+        <meta name="theme-color" content="#1db954" />
       </Head>
       <DefaultSeo {...SEO} />
       <GlobalStyles />
       <NextNprogress
-        color="#e20e8d"
+        color="#1db954"
         startPosition={0.3}
         stopDelayMs={200}
         height={3}

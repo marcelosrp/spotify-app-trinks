@@ -2,9 +2,9 @@ import React from 'react'
 
 import * as S from './styles'
 
-export default function TrackResults({ track, chooseTrack }) {
+export default function TrackResults({ track, handleChooseTrack }) {
   const handlePlay = () => {
-    chooseTrack(track)
+    handleChooseTrack(track)
   }
 
   return (
