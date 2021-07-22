@@ -5,6 +5,7 @@ import { NextSeo } from 'next-seo'
 import SpotifyWebApi from 'spotify-web-api-node'
 import axios from 'axios'
 import DashboardTemplate from '../Templates/Dashboard'
+import ModalLyrics from '../Components/Modal'
 
 const spotifyApi = new SpotifyWebApi({
   clientId: process.env.NEXT_PUBLIC_API_KEY
@@ -21,16 +22,27 @@ const Dashboard = () => {
   const [searchResults, setSearchResults] = useState([])
   const [playingTrack, setPlayingTrack] = useState()
   const [lyrics, setLyrics] = useState('')
-
-  console.log(searchResults)
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+  const [modalLyrics, setModalLyrics] = useState('')
 
   const handleChooseTrack = (track) => {
     setPlayingTrack(track)
-    setSearch('')
+    // setSearch('')
     setLyrics('')
   }
 
   const handleSearch = (e) => setSearch(e.target.value)
+
+  const handleOpenModal = (lyrics) => {
+    console.log(lyrics)
+    setModalIsOpen(true)
+    setModalLyrics(lyrics)
+  }
+
+  const handleCloseModal = () => {
+    console.log('fechou modal')
+    setModalIsOpen(false)
+  }
 
   useEffect(() => {
     if (!accessToken) return
@@ -69,22 +81,6 @@ const Dashboard = () => {
 
     return () => (cancel = true)
   }, [search, accessToken])
-
-  /* useEffect(() => {
-    if (!accessToken) return
-
-    spotifyApi.searchPlaylists('Metallica').then((res) => {
-      setSearchResults(
-        res.body.playlists.items.map((playlist) => {
-          return {
-            name: playlist.name,
-            uri: playlist.uri,
-            playlistUrl: playlist.images[0].url
-          }
-        })
-      )
-    })
-  }, [accessToken]) */
 
   useEffect(() => {
     if (!playingTrack) return
@@ -126,11 +122,17 @@ const Dashboard = () => {
       <DashboardTemplate
         handleSearch={handleSearch}
         handleChooseTrack={handleChooseTrack}
+        handleOpenModal={handleOpenModal}
         search={search}
         searchResults={searchResults}
         playingTrack={playingTrack}
         lyrics={lyrics}
         accessToken={accessToken}
+      />
+      <ModalLyrics
+        handleCloseModal={handleCloseModal}
+        modalIsOpen={modalIsOpen}
+        modalLyrics={modalLyrics}
       />
     </>
   )

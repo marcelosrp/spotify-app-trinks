@@ -24,8 +24,8 @@ export default function Player({ token, trackUri }) {
         color: '#1db954',
         loaderColor: '#1db954',
         sliderColor: '#1db954',
-        trackNameColor: '#fff',
-        trackArtistColor: '#fff'
+        trackNameColor: '#1db954',
+        trackArtistColor: '#000'
       }}
     />
   )

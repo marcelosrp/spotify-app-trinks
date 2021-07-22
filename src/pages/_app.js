@@ -1,10 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
-
 import NextNprogress from 'nextjs-progressbar'
 import { DefaultSeo } from 'next-seo'
-
 import SEO from '../../next-seo-config'
 
 import GlobalStyles from '../styles/global'

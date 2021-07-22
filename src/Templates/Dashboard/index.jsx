@@ -10,6 +10,7 @@ import * as S from './styles'
 export default function DashboardTemplate({
   handleSearch,
   handleChooseTrack,
+  handleOpenModal,
   search,
   searchResults,
   playingTrack,
@@ -31,13 +32,15 @@ export default function DashboardTemplate({
           {searchResults.map((track) => {
             return (
               <TrackResults
-                track={track}
                 key={track.uri}
+                track={track}
+                lyrics={lyrics}
                 handleChooseTrack={handleChooseTrack}
+                handleOpenModal={handleOpenModal}
               />
             )
           })}
-          {searchResults.length === 0 && <S.Lyrics>{lyrics}</S.Lyrics>}
+          {/* {searchResults.length === 0 && <S.Lyrics>{lyrics}</S.Lyrics>} */}
         </S.SongsWrapper>
 
         <S.PlayerWrapper>

@@ -72,6 +72,7 @@ export const PlayerWrapper = styled.div`
   position: absolute;
   bottom: 0;
   left: 50%;
+  margin-bottom: 2rem;
   transform: translateX(-50%);
   z-index: 2;
 `
