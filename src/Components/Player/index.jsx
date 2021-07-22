@@ -21,9 +21,9 @@ export default function Player({ token, trackUri }) {
       uris={trackUri ? [trackUri] : []}
       styles={{
         bgColor: '#eee',
-        color: '#e20e8d',
-        loaderColor: '#e20e8d',
-        sliderColor: '#e20e8d',
+        color: '#1db954',
+        loaderColor: '#1db954',
+        sliderColor: '#1db954',
         trackNameColor: '#fff',
         trackArtistColor: '#fff'
       }}

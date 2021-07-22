@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Avatar = styled.div`
   align-items: center;
   border-radius: 50%;
-  background-color: var(--highlight);
+  background-color: var(--spotify-green);
   display: flex;
   height: 4rem;
   justify-content: center;
