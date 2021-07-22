@@ -17,7 +17,7 @@ const Dashboard = () => {
             'A simple nextjs template to start a new project from scratch',
           images: [
             {
-              url: 'https://meusite.com.br/img/cover.png',
+              url: 'https://meusite.com.br/img/band.png',
               width: 1280,
               height: 720,
               alt: 'My Trips'

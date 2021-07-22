@@ -24,6 +24,8 @@ export default function DashboardTemplate() {
   const [playingTrack, setPlayingTrack] = useState()
   const [lyrics, setLyrics] = useState('')
 
+  console.log(searchResults)
+
   const chooseTrack = (track) => {
     setPlayingTrack(track)
     setSearch('')

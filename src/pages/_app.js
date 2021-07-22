@@ -13,8 +13,14 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
+        <link
+          rel="shortcut icon"
+          href="https://wwwmarketing.scdn.co/img/favicon-32x32.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="https://wwwmarketing.scdn.co/img/favicon-32x32.png"
+        />
         <meta name="theme-color" content="#06092B" />
       </Head>
       <DefaultSeo {...SEO} />
