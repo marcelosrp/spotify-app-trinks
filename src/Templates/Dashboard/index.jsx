@@ -1,4 +1,5 @@
 import React from 'react'
+import FormSearch from '../../Components/FormSearch'
 import TrackResults from '../../Components/TrackResults'
 import Player from '../../Components/Player'
 
@@ -15,14 +16,7 @@ export default function DashboardTemplate({
 }) {
   return (
     <S.Container>
-      <form>
-        <S.InputSearch
-          type="search"
-          placeholder="Pesquise por artistas ou músicas"
-          value={search}
-          onChange={handleSearch}
-        />
-      </form>
+      <FormSearch search={search} handleSearch={handleSearch} />
 
       <S.SongsWrapper>
         {searchResults.map((track) => {
