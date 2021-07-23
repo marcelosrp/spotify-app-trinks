@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Teste front-end Trinks
 
-## Getting Started
+## Tecnologias usadas:
 
-First, run the development server:
+<ul>
+  <li>NextJS</li>
+  <li>ReactJS</li>
+  <li>Styled Components</li>
+  <li>Axios</li>
+  <li>NodeJS</li>
+</ul>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Como rodar o projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Clone o projeto, rode yarn ou npm install para instalar as dependencias e em seguida npm run dev ou yarn dev para subir o servidor local.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Sobre o projeto
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Utilizei o nextjs como framework do react pela facilidade de criar endpoints em nodeJS no back-end. 
+Sendo assim, usei a função de back-end para fazer os processos de autorização e fetch na API pois como preciso passar dados sensíveis como chaves, resolvi não usar o front-end para isso.
+Para o CSS usei styled components pois com ele evitamos problemas de conflitos de classes, além de aproveitar as funções de encaminhamentos de props.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Screenshots:
 
-## Learn More
+Página Login<br>
+![Página Login](/public/img/screenshots/login.png)
 
-To learn more about Next.js, take a look at the following resources:
+Home Dashboard<br>
+![Dashboard](/public/img/screenshots/dashboard1.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Dashboard com lista de músicas<br>
+![Dashboard](/public/img/screenshots/dashboard2.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Dashboard com música tocando<br>
+![Dashboard](/public/img/screenshots/dashboard3.png)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Dashboard com modal com a letra da música<br>
+![Dashboard](/public/img/screenshots/dashboard4.png)
