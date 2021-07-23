@@ -20,6 +20,10 @@ Utilizei o nextjs como framework do react pela facilidade de criar endpoints em 
 Sendo assim, usei a função de back-end para fazer os processos de autorização e fetch na API pois como preciso passar dados sensíveis como chaves, resolvi não usar o front-end para isso.
 Para o CSS usei styled components pois com ele evitamos problemas de conflitos de classes, além de aproveitar as funções de encaminhamentos de props.
 
+## Deploy produção
+
+[https://spotify-app-trinks.vercel.app/](https://spotify-app-trinks.vercel.app/)
+
 ## Screenshots:
 
 Página Login<br>
