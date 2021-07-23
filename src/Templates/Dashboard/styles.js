@@ -68,16 +68,10 @@ export const SongsWrapper = styled.div`
 `
 
 export const PlayerWrapper = styled.div`
-  width: 70rem;
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 50%;
-  margin-bottom: 2rem;
   transform: translateX(-50%);
   z-index: 2;
-`
-
-export const Lyrics = styled.div`
-  text-align: center;
-  white-space: pre;
 `

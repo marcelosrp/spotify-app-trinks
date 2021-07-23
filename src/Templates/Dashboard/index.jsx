@@ -40,7 +40,6 @@ export default function DashboardTemplate({
               />
             )
           })}
-          {/* {searchResults.length === 0 && <S.Lyrics>{lyrics}</S.Lyrics>} */}
         </S.SongsWrapper>
 
         <S.PlayerWrapper>

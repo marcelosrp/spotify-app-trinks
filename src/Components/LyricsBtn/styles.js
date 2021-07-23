@@ -14,6 +14,7 @@ export const Button = styled.button`
   width: 4.5rem;
 
   position: absolute;
-  bottom: 2rem;
+  bottom: 6rem;
   right: 2rem;
+  z-index: 99;
 `
