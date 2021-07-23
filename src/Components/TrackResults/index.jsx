@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import * as S from './styles'
 
@@ -16,4 +17,9 @@ export default function TrackResults({ track, handleChooseTrack }) {
       </S.TrackInfos>
     </S.TrackWrapper>
   )
+}
+
+TrackResults.propTypes = {
+  track: PropTypes.object.isRequired,
+  handleChooseTrack: PropTypes.func.isRequired
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import * as S from './styles'
 
@@ -13,4 +14,9 @@ export default function FormSearch({ search, handleSearch }) {
       />
     </form>
   )
+}
+
+FormSearch.propTypes = {
+  search: PropTypes.string.isRequired,
+  handleSearch: PropTypes.func.isRequired
 }

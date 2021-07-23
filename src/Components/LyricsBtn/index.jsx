@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { FaMusic } from 'react-icons/fa'
 
 import * as S from './styles'
@@ -13,4 +14,8 @@ export default function LyricsBtn({ handleOpenModal }) {
       <FaMusic />
     </S.Button>
   )
+}
+
+LyricsBtn.propTypes = {
+  handleOpenModal: PropTypes.func.isRequired
 }

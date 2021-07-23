@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 import SpotifyPlayer from 'react-spotify-web-playback'
 
-export default function Player({ token, trackUri }) {
+export default function Player({ token = undefined, trackUri = undefined }) {
   const [play, setPlay] = useState(false)
 
   useEffect(() => {
@@ -29,4 +30,9 @@ export default function Player({ token, trackUri }) {
       }}
     />
   )
+}
+
+Player.propTypes = {
+  token: PropTypes.string,
+  trackUri: PropTypes.string
 }

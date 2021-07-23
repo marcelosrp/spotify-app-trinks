@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import Logo from '../../Components/Logo'
 import FormSearch from '../../Components/FormSearch'
 import Avatar from '../../Components/Avatar'
@@ -14,11 +16,9 @@ export default function DashboardTemplate({
   handleOpenModal,
   search,
   searchResults,
-  playingTrack,
-  accessToken
+  playingTrack = undefined,
+  accessToken = undefined
 }) {
-  console.log(playingTrack)
-
   return (
     <S.Container>
       <S.Sidebar>
@@ -52,4 +52,14 @@ export default function DashboardTemplate({
       )}
     </S.Container>
   )
+}
+
+DashboardTemplate.propTypes = {
+  handleSearch: PropTypes.func.isRequired,
+  handleChooseTrack: PropTypes.func.isRequired,
+  handleOpenModal: PropTypes.func.isRequired,
+  search: PropTypes.string.isRequired,
+  searchResults: PropTypes.array.isRequired,
+  playingTrack: PropTypes.object,
+  accessToken: PropTypes.string
 }
