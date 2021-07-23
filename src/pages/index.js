@@ -8,15 +8,15 @@ const Home = () => {
     <>
       <NextSeo
         title="Spotify App Trinks"
-        description="Teste front-end para a Tricks"
-        canonical="https://spotify-app-tricks.vercel.app/"
+        description="Teste front-end para a Trinks"
+        canonical="https://spotify-app-trinks.vercel.app/"
         openGraph={{
-          url: 'https://spotify-app-tricks.vercel.app/',
+          url: 'https://spotify-app-trinks.vercel.app/',
           title: 'Template',
-          description: 'Teste front-end para a Tricks',
+          description: 'Teste front-end para a Trinks',
           images: [
             {
-              url: 'https://spotify-app-tricks.vercel.app/img/band.png',
+              url: 'https://spotify-app-trinks.vercel.app/img/band.png',
               width: 1280,
               height: 720,
               alt: 'Spotify App Trinks'

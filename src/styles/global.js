@@ -41,6 +41,24 @@ const GlobalStyles = createGlobalStyle`
   a {
     color: var(--highlight);
   }
+
+  .ReactModal__Content {
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 2rem;
+      position: absolute;
+      right: 1rem;
+    }
+
+    p {
+      color: var(--background);
+      font-size: 1.6rem;
+      text-align: center;
+      white-space: pre;
+    }
+  }
 `
 
 export default GlobalStyles

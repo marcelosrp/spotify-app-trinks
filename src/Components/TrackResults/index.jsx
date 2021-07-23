@@ -8,14 +8,10 @@ export default function TrackResults({ track, handleChooseTrack }) {
   }
 
   return (
-    <S.TrackWrapper title={track.title}>
-      <S.TrackThumb
-        onClick={handlePlay}
-        src={track.albumUrl.url}
-        alt={track.title}
-      />
+    <S.TrackWrapper title={track.title} onClick={handlePlay}>
+      <S.TrackThumb src={track.albumUrl.url} alt={track.title} />
       <S.TrackInfos>
-        <S.TrackTitle onClick={handlePlay}>{track.title}</S.TrackTitle>
+        <S.TrackTitle>{track.title}</S.TrackTitle>
         <S.TrackMuted>{track.artists}</S.TrackMuted>
       </S.TrackInfos>
     </S.TrackWrapper>
