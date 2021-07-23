@@ -10,11 +10,9 @@ import * as S from './styles'
 export default function DashboardTemplate({
   handleSearch,
   handleChooseTrack,
-  handleOpenModal,
   search,
   searchResults,
   playingTrack,
-  lyrics,
   accessToken
 }) {
   return (
@@ -34,9 +32,7 @@ export default function DashboardTemplate({
               <TrackResults
                 key={track.uri}
                 track={track}
-                lyrics={lyrics}
                 handleChooseTrack={handleChooseTrack}
-                handleOpenModal={handleOpenModal}
               />
             )
           })}

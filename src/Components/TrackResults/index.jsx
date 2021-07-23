@@ -2,12 +2,7 @@ import React from 'react'
 
 import * as S from './styles'
 
-export default function TrackResults({
-  track,
-  lyrics,
-  handleChooseTrack,
-  handleOpenModal
-}) {
+export default function TrackResults({ track, handleChooseTrack }) {
   const handlePlay = () => {
     handleChooseTrack(track)
   }
@@ -22,7 +17,6 @@ export default function TrackResults({
       <S.TrackInfos>
         <S.TrackTitle onClick={handlePlay}>{track.title}</S.TrackTitle>
         <S.TrackMuted>{track.artists}</S.TrackMuted>
-        <S.Button onClick={() => handleOpenModal(lyrics)}>Ver letra</S.Button>
       </S.TrackInfos>
     </S.TrackWrapper>
   )
