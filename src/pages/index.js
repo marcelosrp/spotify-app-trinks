@@ -7,23 +7,22 @@ const Home = () => {
   return (
     <>
       <NextSeo
-        title="Template"
-        description="A simple nextjs template to start a new project from scratch"
-        canonical="https://meusite.com.br/"
+        title="Spotify App Trinks"
+        description="Teste front-end para a Tricks"
+        canonical="https://spotify-app-tricks.vercel.app/"
         openGraph={{
-          url: 'https://meusite.com.br/',
+          url: 'https://spotify-app-tricks.vercel.app/',
           title: 'Template',
-          description:
-            'A simple nextjs template to start a new project from scratch',
+          description: 'Teste front-end para a Tricks',
           images: [
             {
-              url: 'https://meusite.com.br/img/band.png',
+              url: 'https://spotify-app-tricks.vercel.app/img/band.png',
               width: 1280,
               height: 720,
-              alt: 'My Trips'
+              alt: 'Spotify App Trinks'
             }
           ],
-          site_name: 'My Trips'
+          site_name: 'Spotify App Trinks'
         }}
       />
       <HomeTemplate />

@@ -5,7 +5,10 @@ export default function Refresh(req, res) {
     const refreshToken = req.body.refreshToken
 
     const spotifyAPI = new SpotifyWebApi({
-      redirectUri: process.env.NEXT_PUBLIC_REDIRECT_URI,
+      redirectUri:
+        process.env.NODE_ENV === 'production'
+          ? process.env.NEXT_PUBLIC_REDIRECT_URI
+          : 'http://localhost:3000/',
       clientId: process.env.NEXT_PUBLIC_API_KEY,
       clientSecret: process.env.NEXT_PUBLIC_API_KEY_SECRET,
       refreshToken
