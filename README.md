@@ -1,5 +1,3 @@
-## Teste front-end Trinks
-
 ## Tecnologias usadas:
 
 <ul>
