@@ -12,7 +12,13 @@
 
 ## Como rodar o projeto
 
-Clone o projeto, rode yarn ou npm install para instalar as dependencias e em seguida npm run dev ou yarn dev para subir o servidor local.
+<ul>
+  <li>Clone o projeto;</li>
+  <li>Rode yarn ou npm install para instalar as dependencias</li>
+  <li>Pegar as as chaves <strong>client id</strong> e <strong>Client Secret</strong></li>
+  <li>Criar um arquivo na .env.local na raiz do projeto com as seguintes variaveis de ambiente: <strong>NEXT_PUBLIC_API_KEY</strong> para a client id, <strong>NEXT_PUBLIC_API_KEY_SECRET</strong> para a client secret e <strong>NEXT_PUBLIC_REDIRECT_URI</strong> com a url de produção (https://spotify-app-trinks.vercel.app/)</li>
+  <li>Rode npm run dev ou yarn dev para subir o servidor local.</li>
+</ul>
 
 ## Sobre o projeto
 
